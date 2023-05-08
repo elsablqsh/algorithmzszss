@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int count = 1, sum=0; //** sum have to start from 0 bc it will be added with count
+    
+    while(count <= 100){
+    sum = sum + count;
+    count += 1; //** keep adding until the statement is false because while(count <= 100)
+    }
+    printf("sum is %d", sum); //** final statement should be false (sum is now bigger than 100)
+    
+    return 0;
+}

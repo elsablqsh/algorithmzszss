@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int sum = 0, count = 1;
+    
+    for(count = 1; count <= 100; count++){
+        sum = sum + count; //** count += 1 takde sebab kat for dah ada count++
+    }
+    printf("sum is %d", sum); //** kalau perlukan result sahaja lepas for, kalau nak tahu berapa kali calculate dalam for 
+    
+    return 0;
+}

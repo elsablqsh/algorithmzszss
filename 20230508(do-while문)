@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void)
+{
+    int dan=2, count=1, result;
+    
+    do{
+      result= dan * count;
+      printf("%d*%d=%d\n",dan, count, result);
+      count += 1; //** kena lepas printf kalau tak printf akan start dari 2
+    } while(count <= 9); //** buat sampai count = 9
+    
+    return 0;
+}
